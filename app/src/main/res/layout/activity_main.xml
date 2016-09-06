@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl2023.formpenilaian.MainActivity">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="64dp"
+            android:layout_marginStart="64dp"
+            android:text="SELEKSI PENDAFTARAN"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor="#d05050"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:text="SUB ORGANISASI METIC"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor="#d05050"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/metic" />
+
+        <TextView
+            android:id="@+id/textViewNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="24dp"
+            android:text="Nama" />
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewNama" />
+
+        <TextView
+            android:id="@+id/textViewKelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextNama"
+            android:text="Kelas" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewKelas" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spinner"
+            android:text="Jenis Kelamin" />
+
+        <RadioGroup
+            android:id="@+id/radioGrupJK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3">
+
+            <RadioButton
+                android:id="@+id/radioButtonL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Laki Laki" />
+
+            <RadioButton
+                android:id="@+id/radioButtonP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView"
+                android:layout_alignRight="@+id/textView"
+                android:layout_below="@+id/textView3"
+                android:layout_marginEnd="71dp"
+                android:layout_marginRight="71dp"
+                android:checked="false"
+                android:text="Perempuan" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textViewKe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioGrupJK"
+            android:text="Keahlian" />
+
+        <CheckBox
+            android:id="@+id/checkBoxD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewKe"
+            android:checked="false"
+            android:text="Design Grafis" />
+
+        <CheckBox
+            android:id="@+id/checkBoxA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkBoxD"
+            android:checked="false"
+            android:text="Animasi" />
+
+        <CheckBox
+            android:id="@+id/checkBoxS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkBoxA"
+            android:checked="false"
+            android:text="Software Aplikasi" />
+
+        <CheckBox
+            android:id="@+id/checkBoxJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/buttonOK"
+            android:layout_alignRight="@+id/buttonOK"
+            android:layout_alignTop="@+id/checkBoxD"
+            android:checked="false"
+            android:text="Jaringan" />
+
+        <CheckBox
+            android:id="@+id/checkBoxW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkBoxJ"
+            android:layout_alignStart="@+id/checkBoxJ"
+            android:layout_below="@+id/checkBoxJ"
+            android:checked="false"
+            android:text="Web Design" />
+
+        <TextView
+            android:id="@+id/textViewAlasan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkBoxS"
+            android:text="Alasan ingin mengikuti" />
+
+        <EditText
+            android:id="@+id/editTextAlasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewAlasan" />
+
+
+        <Button
+            android:id="@+id/buttonOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/editTextAlasan"
+            android:layout_centerHorizontal="true"
+            android:text="OK" />
+
+        <TextView
+            android:id="@+id/textViewHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/buttonOK"
+            tools:text="Hasil" />
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editTextNama" />
+
+
+    </RelativeLayout>
+</ScrollView>

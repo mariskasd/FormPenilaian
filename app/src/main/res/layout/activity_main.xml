@@ -46,24 +46,14 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:src="@drawable/metic" />
-
-        <TextView
-            android:id="@+id/textViewNama"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/imageView"
-            android:layout_marginTop="24dp"
-            android:text="Nama" />
-
         <EditText
             android:id="@+id/editTextNama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textViewNama" />
+            android:layout_below="@+id/imageView"
+            android:hint="Nama" />
 
         <TextView
             android:id="@+id/textViewKelas"
@@ -180,14 +170,7 @@
             android:checked="false"
             android:text="Web Design" />
 
-        <TextView
-            android:id="@+id/textViewAlasan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/checkBoxS"
-            android:text="Alasan ingin mengikuti" />
+
 
         <EditText
             android:id="@+id/editTextAlasan"
@@ -195,35 +178,28 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textViewAlasan" />
+            android:layout_below="@+id/checkBoxS"
+            android:hint="Alasan ingin mengikuti" />
 
 
         <Button
             android:id="@+id/buttonOK"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_below="@+id/editTextAlasan"
             android:layout_centerHorizontal="true"
             android:text="OK" />
 
         <TextView
+
             android:id="@+id/textViewHasil"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_below="@+id/buttonOK"
+            android:paddingLeft="20dp"
             tools:text="Hasil" />
 
 
-        <ScrollView
-            android:id="@+id/scrollView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/editTextNama" />
 
 
     </RelativeLayout>

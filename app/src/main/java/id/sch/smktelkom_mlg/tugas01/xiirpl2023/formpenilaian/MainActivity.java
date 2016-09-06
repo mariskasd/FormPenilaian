@@ -60,35 +60,36 @@ public class MainActivity extends AppCompatActivity {
             nama = "Nama : " + nm + "\n";
             alasan = "Alasan mengikuti  : " + als + "\n";
 
+            String jk = "Jenis Kelamin :  ";
+            int jenis = jk.length();
+            if (rgjk.getCheckedRadioButtonId() != -1) {
+                RadioButton rb = (RadioButton)
+                        findViewById(rgjk.getCheckedRadioButtonId());
+                jk += rb.getText().toString() + "\n";
+
+            }
+
+            if (jk.length() == jenis) {
+                jk += "Tidak Ada Pilihan JK \n";
+            }
+
+            //checkbox
+            String ahli = "Keahlian Anda :  ";
+            int startlen = ahli.length();
+            if (cba.isChecked()) ahli += cba.getText() + "\n";
+            if (cbs.isChecked()) ahli += cbs.getText() + "\n";
+            if (cbd.isChecked()) ahli += cbd.getText() + "\n";
+            if (cbj.isChecked()) ahli += cbj.getText() + "\n";
+            if (cbw.isChecked()) ahli += cbw.getText() + "\n";
+
+            if (ahli.length() == startlen) ahli += "Tidak Ada Pilihan \n";
+            tvHasil.setText(nama + alasan + jk + ahli);
 
             // tvHasil.setText(nama + " berusia " + usia + " tahun");
         }
         //radiobutton
 
-        String jk = "Jenis Kelamin :  ";
-        int jenis = jk.length();
-        if (rgjk.getCheckedRadioButtonId() != -1) {
-            RadioButton rb = (RadioButton)
-                    findViewById(rgjk.getCheckedRadioButtonId());
-            jk += rb.getText().toString() + "\n";
 
-        }
-
-        if (jk.length() == jenis) {
-            jk += "Tidak Ada Pilihan JK \n";
-        }
-
-        //checkbox
-        String ahli = "Keahlian Anda :  ";
-        int startlen = ahli.length();
-        if (cba.isChecked()) ahli += cba.getText() + "\n";
-        if (cbs.isChecked()) ahli += cbs.getText() + "\n";
-        if (cbd.isChecked()) ahli += cbd.getText() + "\n";
-        if (cbj.isChecked()) ahli += cbj.getText() + "\n";
-        if (cbw.isChecked()) ahli += cbw.getText() + "\n";
-
-        if (ahli.length() == startlen) ahli += "Tidak Ada Pilihan \n";
-        tvHasil.setText(nama + alasan + jk + ahli);
 
 
     }
@@ -98,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
         boolean valid = true;
         String nama = etNama.getText().toString();
         String alasan = etAlasan.getText().toString();
+
 
         if (nama.isEmpty()) {
             etNama.setError("Nama Belum Diisi");
@@ -117,6 +119,8 @@ public class MainActivity extends AppCompatActivity {
         return valid;
     }
 }
+
+
 
     /*
     @Overridepublic void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {

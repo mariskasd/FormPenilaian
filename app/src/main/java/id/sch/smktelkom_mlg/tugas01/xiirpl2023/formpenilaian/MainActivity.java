@@ -51,16 +51,20 @@ public class MainActivity extends AppCompatActivity {
 
         String alasan = null;
         String nama = null;
+        String hasilakhir = "Data Anda adalah sebagai berikut : \n\n";
 
         //textbox
         if (isValid()) {
             String nm = etNama.getText().toString();
             String als = etAlasan.getText().toString();
 
-            nama = "Nama : " + nm + "\n";
-            alasan = "Alasan mengikuti  : " + als + "\n";
+            nama = "Nama                         : " + nm + "\n";
+            alasan = "Alasan mengikuti    : " + als + "\n";
 
-            String jk = "Jenis Kelamin :  ";
+
+            //radiobutton
+
+            String jk = "Jenis Kelamin          : ";
             int jenis = jk.length();
             if (rgjk.getCheckedRadioButtonId() != -1) {
                 RadioButton rb = (RadioButton)
@@ -74,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             //checkbox
-            String ahli = "Keahlian Anda :  ";
+            String ahli = "Keahlian Anda          : ";
             int startlen = ahli.length();
             if (cba.isChecked()) ahli += cba.getText() + "\n";
             if (cbs.isChecked()) ahli += cbs.getText() + "\n";
@@ -83,16 +87,13 @@ public class MainActivity extends AppCompatActivity {
             if (cbw.isChecked()) ahli += cbw.getText() + "\n";
 
             if (ahli.length() == startlen) ahli += "Tidak Ada Pilihan \n";
-            tvHasil.setText(nama + alasan + jk + ahli);
+            tvHasil.setText(hasilakhir + nama + alasan + jk + ahli);
 
-            // tvHasil.setText(nama + " berusia " + usia + " tahun");
+
         }
-        //radiobutton
 
+        }
 
-
-
-    }
 
     private boolean isValid() {
 

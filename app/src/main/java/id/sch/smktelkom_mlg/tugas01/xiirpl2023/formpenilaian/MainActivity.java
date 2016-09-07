@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             //checkbox
-            String ahli = "Keahlian Anda          : ";
+            String ahli = "Keahlian Anda           : ";
             int startlen = ahli.length();
             if (cba.isChecked()) ahli += cba.getText() + "\n";
             if (cbs.isChecked()) ahli += cbs.getText() + "\n";

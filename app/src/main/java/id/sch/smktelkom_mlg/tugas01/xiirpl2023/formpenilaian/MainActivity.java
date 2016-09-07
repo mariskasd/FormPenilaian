@@ -8,6 +8,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvHasil;
     RadioGroup rgjk;
     CheckBox cbd, cba, cbs, cbj, cbw;
+    Spinner spKelas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         cbs = (CheckBox) findViewById(R.id.checkBoxS);
         cbj = (CheckBox) findViewById(R.id.checkBoxJ);
         cbw = (CheckBox) findViewById(R.id.checkBoxW);
+        spKelas = (Spinner) findViewById(R.id.spinnerKelas);
 
         bOK.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,7 +77,22 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if (jk.length() == jenis) {
-                jk += "Tidak Ada Pilihan JK \n";
+                jk += "Anda belum memilih JK\n";
+            }
+
+
+
+            //spinner
+
+            //String kelas = null;
+
+            StringBuilder builder = new StringBuilder();
+            builder.append("Kelas                          : ");
+            if (spKelas.getSelectedItem().equals("--Pilih Kelas--")){ builder.append("Anda belum memilih kelas \n");}
+            else {
+
+                builder.append(spKelas.getSelectedItem().toString());
+                builder.append("\n");
             }
 
             //checkbox
@@ -86,8 +104,11 @@ public class MainActivity extends AppCompatActivity {
             if (cbj.isChecked()) ahli += cbj.getText() + "\n";
             if (cbw.isChecked()) ahli += cbw.getText() + "\n";
 
-            if (ahli.length() == startlen) ahli += "Tidak Ada Pilihan \n";
-            tvHasil.setText(hasilakhir + nama + alasan + jk + ahli);
+            if (ahli.length() == startlen) ahli += "Keahlian wajib diisi \n";
+            tvHasil.setText(hasilakhir + nama + builder + jk + ahli + alasan);
+
+
+
 
 
         }

@@ -65,13 +65,13 @@
             android:text="Kelas" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:entries="@array/kelas"
+            android:id="@+id/spinnerKelas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textViewKelas"
-            android:entries="@array/kelas" />
+            android:layout_below="@+id/textViewKelas" />
 
         <TextView
             android:id="@+id/textView3"
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/spinner"
+            android:layout_below="@+id/spinnerKelas"
             android:text="Jenis Kelamin" />
 
         <RadioGroup

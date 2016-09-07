@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (nama.isEmpty()) {
-            etNama.setError("Nama Belum Diisi");
+            etNama.setError("Nama Belum Diisi ");
             valid = false;
         } else {
             etNama.setError(null);

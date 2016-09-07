@@ -70,7 +70,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textViewKelas" />
+            android:layout_below="@+id/textViewKelas"
+            android:entries="@array/kelas" />
 
         <TextView
             android:id="@+id/textView3"

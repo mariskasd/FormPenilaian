@@ -14,7 +14,7 @@
   
 * __Screenshoot Aplikasi__
 
-  1. Halaman awal dengan scrollview
+  1. Halaman awal 
      * ![awal](https://cloud.githubusercontent.com/assets/22024067/19476280/7b4d159c-9562-11e6-968d-024700df3097.JPG)
   2. Halaman eror ketika tidak diisikan apapun dan langsung diklik ok
      * ![txko](https://cloud.githubusercontent.com/assets/22024067/19476324/bf74adb6-9562-11e6-84a7-09e841953b67.JPG)

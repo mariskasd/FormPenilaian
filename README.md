@@ -15,13 +15,13 @@
 * __Screenshoot Aplikasi__
 
   1. Halaman awal dengan scrollview
-     * ![screenshot 2](https://cloud.githubusercontent.com/assets/22024067/19475754/dc3f0d72-955f-11e6-910d-0c6bcf778a7c.png)
+     * ![awal](https://cloud.githubusercontent.com/assets/22024067/19476280/7b4d159c-9562-11e6-968d-024700df3097.JPG)
   2. Halaman eror ketika tidak diisikan apapun dan langsung diklik ok
-     * ![screenshot 3](https://cloud.githubusercontent.com/assets/22024067/19475775/ef140592-955f-11e6-90d7-c863cfb9f2d9.png)
+     * ![txko](https://cloud.githubusercontent.com/assets/22024067/19476324/bf74adb6-9562-11e6-84a7-09e841953b67.JPG)
   3. Halaman ketika mengisikan edittext tetapi tidak memilih pada checkbox/spinner/radio button
-     * ![screenshot 4](https://cloud.githubusercontent.com/assets/22024067/19475795/0793a104-9560-11e6-91ce-33131f5b2a03.png)
+     * ![spko](https://cloud.githubusercontent.com/assets/22024067/19476348/dd99b78c-9562-11e6-8dc7-17d1340ca657.JPG)
   4. Halaman ketika pengisian form dilakukan dengan benar
-     * ![screenshot 5](https://cloud.githubusercontent.com/assets/22024067/19475810/2615dc6e-9560-11e6-9522-2bdd152fa2f5.png)
+     * ![yes](https://cloud.githubusercontent.com/assets/22024067/19476356/f33d01e8-9562-11e6-8e76-eb1aea583930.JPG)
      
   
 * __Link File APK__
